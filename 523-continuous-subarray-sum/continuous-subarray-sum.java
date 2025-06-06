@@ -10,7 +10,7 @@ class Solution {
             if(map.containsKey(sum%k))
             {
                 int index = map.get(sum%k);
-                if(i-index>=2) return true;
+                if(i-index>=2){ return true;}
             }
         
             else
