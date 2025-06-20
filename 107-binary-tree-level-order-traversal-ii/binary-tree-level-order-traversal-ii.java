@@ -37,12 +37,13 @@ class Solution {
                }
             }
 
-            result.add( 0 ,currentlevel);
+            result.add(currentlevel);
 
         }
 
+      
+        Collections.reverse(result);  // fix here
         return result;
-
 
     }
 }
