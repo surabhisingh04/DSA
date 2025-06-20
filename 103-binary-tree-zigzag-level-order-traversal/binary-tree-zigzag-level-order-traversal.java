@@ -18,7 +18,7 @@ class Solution {
          List<List<Integer>> result = new ArrayList<>();
 
          if(root==null){
-            return new ArrayList<>();
+            return result;
          }
 
          Deque<TreeNode> queue = new LinkedList<>();
