@@ -22,13 +22,13 @@ class Solution {
         Queue <TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         while(!queue.isEmpty()){
-            List <Integer>  currentlevel = new ArrayList<>() ;
+            
             int levelsize = queue.size();
 
             for ( int i = 0 ; i<levelsize ;i++){
 
                 TreeNode current = queue.poll();
-                currentlevel.add(current.val);
+                
                 if(i==levelsize-1){
                     result.add(current.val);
                 }
