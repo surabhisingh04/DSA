@@ -26,14 +26,17 @@ class Solution {
         if(h ==null){
             return null;
         }
+        //go left 
         TreeNode left = inorder(h.left ,s);
         if(left!=null){
             return left ;
         }
+        //check the left side 
         pos++;
         if(pos==s){
             return h ;
         }
+        //now go for right subtree  
         return inorder(h.right ,s);
     }
 }
