@@ -35,6 +35,6 @@ class Solution {
             curreven=curreven.next;
         }
             currodd.next=even;
-          return odd;
+          return head;
     }
 }
